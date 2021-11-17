@@ -1,0 +1,2 @@
+*.bat
+k8s/my-deploy.yml
