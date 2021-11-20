@@ -6,6 +6,7 @@ Small skeleton app running on k8s
 
 *NOTE*
 Please replace `${repositry}` in below and `k8s/*.yml` to point your private/public repositry.
+
 ```
 docker build -t ${repositry}/k8s-go-app:latest .
 docker tag k8s-go-app:latest ${repositry}/k8s-go-app:latest
