@@ -16,7 +16,7 @@ func main() {
 	e := echo.New()
 	e.Use(middleware.Logger())
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "こんにちわ 💩")
+		return c.String(http.StatusOK, "こんにちわ 💩\n")
 	})
 	e.Logger.Fatal(e.Start(":" + port))
 }
