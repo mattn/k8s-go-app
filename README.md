@@ -1,5 +1,7 @@
 # k8s-go-app
 
+[![Publish Docker image](https://github.com/mattn/k8s-go-app/actions/workflows/build.yaml/badge.svg)](https://github.com/mattn/k8s-go-app/actions/workflows/build.yaml)
+
 Small skeleton app running on k8s
 
 ## Usage
