@@ -1,4 +1,4 @@
-module app
+module k8s-go-app
 
 go 1.17
 

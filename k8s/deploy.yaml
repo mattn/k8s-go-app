@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app
+  name: k8s-go-app
 spec:
   selector:
     matchLabels:
-      app: app
+      app: k8s-go-app
   template:
     metadata:
       labels:
-        app: app
+        app: k8s-go-app
     spec:
       containers:
-      - name: app
+      - name: k8s-go-app
         image: ${repository}/k8s-go-app:latest
         imagePullPolicy: IfNotPresent
         ports:
