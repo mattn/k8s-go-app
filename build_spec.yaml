@@ -19,6 +19,7 @@ steps:
     command: |
       docker build -t ${app_name}:${app_version} .
       docker tag ${app_name}:${app_version} ${docker_server}/${registry_path}
+      docker tag ${app_name}:${app_version} k8s-go-app
       tag=${app_version}
     onFailure:
       - type: Command
