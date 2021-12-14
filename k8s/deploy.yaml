@@ -11,9 +11,11 @@ spec:
       labels:
         app: k8s-go-app
     spec:
+      imagePullSecrets:
+      - name: ${secret}
       containers:
       - name: k8s-go-app
-        image: ${repository}/k8s-go-app:latest
+        image: ${docker_server}/${registry_path}/k8s-go-app:${tag}
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
