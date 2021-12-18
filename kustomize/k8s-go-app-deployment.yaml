@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-go-app
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: k8s-go-app
+  template:
+    metadata:
+      labels:
+        app: k8s-go-app
+    spec:
+      containers:
+      - image: mattn/k8s-go-app:latest
+        name: k8s-go-app
+        ports:
+        - containerPort: 80

@@ -1,0 +1,7 @@
+namePrefix: kustomize-
+
+resources:
+- k8s-go-app-deployment.yaml
+- k8s-go-app-svc.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
