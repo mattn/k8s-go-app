@@ -4,7 +4,7 @@ on:
   push:
     paths-ignore:
       - '.github/**'
-      - '!.github/docker.yaml'
+      - '!.github/workflows/docker.yaml'
       - 'k8s/**'
       - 'kustomize/**'
       - '**.md'
