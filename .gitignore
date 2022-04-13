@@ -1,3 +1,4 @@
 *.bat
 *.exe
-k8s/my-deploy.yml
+.idea
+oci
