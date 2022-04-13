@@ -37,4 +37,4 @@ jobs:
       run: docker images | grep k8s-go-app
 
     - name: check run
-      run: docker run --rm mattn/k8s-go-app
+      run: docker run --rm mattn/k8s-go-app --help
