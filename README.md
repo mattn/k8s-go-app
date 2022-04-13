@@ -9,8 +9,8 @@ Small skeleton app running on k8s
 *NOTE*
 Please replace `${repositry}` in below and `k8s/*.yml` to point your private/public repositry.
 
-```
-docker build -t ${repositry}/k8s-go-app:latest .
+```sh
+docker buildx build -t k8s-go-app:latest .
 docker tag k8s-go-app:latest ${repositry}/k8s-go-app:latest
 docker push ${repositry}/k8s-go-app:latest
 kubectl apply -f k8s/deploy.yml
@@ -20,6 +20,7 @@ kubectl apply -f k8s/service.yml
 ## Requirements
 
 * Docker
+* [Docker Buildx](https://docs.docker.com/buildx/working-with-buildx/) //no need to install if using Docker Desktop
 * kubectl
 
 ## License
