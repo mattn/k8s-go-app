@@ -33,7 +33,7 @@ jobs:
       with:
         images: mattn/k8s-go-app
         tags: |
-          type=sha,prefix=
+          type=semver,pattern={{version}}
 
     - name: Build and push Docker image
       uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
