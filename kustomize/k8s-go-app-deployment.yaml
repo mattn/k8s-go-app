@@ -17,4 +17,4 @@ spec:
       - image: mattn/k8s-go-app:latest
         name: k8s-go-app
         ports:
-        - containerPort: 80
+        - containerPort: 8080
