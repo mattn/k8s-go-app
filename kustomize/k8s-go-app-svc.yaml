@@ -6,6 +6,6 @@ spec:
   type: NodePort
   ports:
   - port: 8080
-    nodePort: 30000
+    nodePort: 30001
   selector:
     app: k8s-go-app
